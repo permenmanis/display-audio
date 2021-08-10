@@ -58,7 +58,7 @@ void bacaSensor(){
     filterPot2 += analogRead(pot2);
   }
   outPot1 = filterPot1 / 5;
-  outPot2 = 800;//filterPot2 / 5;
+  outPot2 = filterPot2 / 5;
   if(outPot1 > 1000){
     outPot1 = 1000;
   }
